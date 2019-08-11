@@ -48,6 +48,7 @@ public class CalculatorTest {
         double actual = calculator.calculate(OperationType.SUBTRACTION,arg1,arg2);
         //then
         Assert.assertEquals(1.0,actual,0.00000001);
+        System.out.println("wynik z odejmowania = " + actual);
     }
 
     @Test
@@ -58,6 +59,7 @@ public class CalculatorTest {
         //when
         double actual = calculator.calculate(OperationType.DIVISION,arg1,arg2);
             Assert.assertEquals(5.0,actual,0.00000001);
+        System.out.println("wynik z dzielenia = " + actual);
 
     }
 
